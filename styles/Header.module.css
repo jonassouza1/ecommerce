@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 0px;
+  background-color: #ffe600;
+}
+
+.divLogo {
+  display: grid;
+  grid-template-columns: minmax(150px, 162px) minmax(400px, 580px) minmax(300px, 390px);
+  grid-column-gap: 24px;
+  grid-template-rows: auto;
+}
+
+.divInput {
+  display: flex;
+  width: 580px;
+
+}
+
+
+.divInput input {
+  padding: 0px 10px;
+  width: 530px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.divInput input:focus {
+  border: solid 0.5px #004daa;
+  border-right: none;
+}
+
+.divInput button {
+  height: 40px;
+  width: 46px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+}
+
+.divInput button::before {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: 0;
+  height: 120%;
+  width: 0.5px;
+  background: linear-gradient(to bottom, transparent 45%, #666 45%, #666 100%);
+}
+
+.divInput input:focus+button {
+  border: 0.5px solid #004daa;
+  border-left: none;
+}
+
+
+.publicity {
+  display: flex;
+  justify-content: flex-end;
+  width: 390px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width:1160px) {
+
+  .divLogo {
+    max-width: 600px;
+  }
+
+  .divLogo img {
+    display: none;
+  }
+
+  .publicity {
+    display: none;
+  }
+}
+
+@media (max-width:620px) {
+
+  .divLogo {
+    display: flex;
+    max-width: 460px;
+  }
+
+  .divInput {
+
+    width: 100%;
+
+  }
+
+}
+
+@media (max-width:460px) {
+
+  .divLogo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+}
