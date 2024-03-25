@@ -1,10 +1,11 @@
 .header {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  height: 100px;
+  min-height: 100px;
+  padding-top: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 0px;
   background-color: #ffe600;
 }
@@ -18,7 +19,8 @@
 
 .divInput {
   display: flex;
-  width: 580px;
+  justify-content: center;
+  width: 100%;
 
 }
 
@@ -37,6 +39,7 @@
 }
 
 .divInput button {
+  margin-right: 5px;
   height: 40px;
   width: 46px;
   border: none;
@@ -69,10 +72,13 @@
   cursor: pointer;
 }
 
-@media (max-width:1160px) {
+@media (max-width:1110px) {
 
   .divLogo {
-    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
   }
 
   .divLogo img {
@@ -84,28 +90,23 @@
   }
 }
 
-@media (max-width:620px) {
-
-  .divLogo {
+@media (max-width:700px) {
+  .header {
     display: flex;
-    max-width: 460px;
+    padding: 15px;
+    justify-content: flex-start;
   }
 
-  .divInput {
-
-    width: 100%;
+  .divInput input {
+    max-width: 70%;
+    height: 40px;
 
   }
-
 }
 
 @media (max-width:460px) {
-
-  .divLogo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .divInput input {
+    max-width: 60%;
+    margin-left: -50px;
   }
-
-
 }
