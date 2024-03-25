@@ -1,13 +1,15 @@
 import styles from "styles/NavBar.module.css";
+import { NavResponsive } from "../nav-responsive";
 
 export const NavBar = () => {
   return (
     <nav className={styles.divNav}>
-      <div className={styles.divCep}>
-        <a href="#">
-          <span>informe seu CEP</span>
-        </a>
-      </div>
+      <a href="#" className={styles.divCep}>
+        <span>
+          <i className="fa-solid fa-location-dot"></i> informe seu CEP
+        </span>
+      </a>
+
       <ul className={styles.divList}>
         <li className={styles.father}>
           <a href="#" target="_blank" className={styles.children}>
@@ -59,23 +61,7 @@ export const NavBar = () => {
           </a>
         </li>
       </ul>
-
-      <ul className={styles.divList2}>
-        <li>
-          <a href="#" target="_blank">
-            create your account
-          </a>
-          <a href="#" target="_blank">
-            enter
-          </a>
-          <a href="#" target="_blank">
-            purchase
-          </a>
-          <a href="#" target="_blank">
-            <i className="fa-solid fa-cart-shopping"></i>
-          </a>
-        </li>
-      </ul>
+      <NavResponsive />
     </nav>
   );
 };
