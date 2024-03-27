@@ -1,0 +1,169 @@
+.divContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 826px;
+  height: 422px;
+}
+
+.divTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  width: 350px;
+}
+
+.divTitle h1 {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-right: 10px;
+}
+
+.divTitle a {
+  padding-top: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.slides {
+  height: 100%;
+  width: 100%;
+  top: -25px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.section span {
+  position: relative;
+  background-color: #3391ff;
+  top: -355px;
+  right: -340px;
+  z-index: 0;
+  z-index: 10;
+}
+
+
+
+
+.offerDay {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 6px;
+  width: 181px;
+  height: 357px;
+
+}
+
+.offerDay a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.offerDay img {
+  width: 100%;
+}
+
+.offerDay p {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+.offerDay .span {
+  font-size: 12px;
+}
+
+
+
+.offerDay h2 {
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+
+}
+
+.offerDay .centav {
+  position: absolute;
+  top: 2px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.offerDay .off {
+  color: #00a650;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.offerDay .off1 {
+  color: #00a650;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+
+.full {
+  color: #014422;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+@media(max-width:1200px) {
+  .divContainer {
+    width: 700px;
+  }
+
+
+}
+
+@media(max-width:1060px) {
+  .divContainer {
+    width: 500px;
+  }
+}
+
+@media(max-width:860px) {
+  .divContainer {
+    align-items: center;
+    width: 250px;
+  }
+
+  .divTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding-top: 40px;
+  }
+
+  .divTitle h1 {
+    padding: 0;
+  }
+
+  .divTitle a {
+    padding: 0;
+  }
+
+  .section span {
+    display: none;
+  }
+
+
+}

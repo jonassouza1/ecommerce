@@ -1,13 +1,16 @@
-/* styles/global.css */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
-
-/* Adicione quaisquer estilos globais adicionais aqui */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Helvetica;
+}
+
+body {
+
+  background-color: #ebebeb;
+  height: 6000px;
 }
 
 img {
