@@ -101,50 +101,55 @@ export const CarouselHistoric = () => {
     };
   }, []);
   return (
-    <section className={styles.sectionCarousel}>
-      <div className={styles.container}>
-        <div className={styles.divTitle}>
-          <h1>Offer of the day</h1>
-        </div>
-        <div className={styles.carousel}>
-          <Swiper
-            slidesPerView={count}
-            navigation
-            pagination={{ clickable: true }}
-            className={styles.slides}
-          >
-            {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
-                <div className={stylesP.offerDay}>
-                  <a href="#">
-                    <img
-                      src="https://http2.mlstatic.com/D_Q_NP_2X_736700-MLU74110477966_012024-V.webp"
-                      alt="cream"
-                    />
-                  </a>
-                  <p>{slide.text}</p>
-                  <label className={stylesP.span}>
-                    <del>{slide.value1}</del>
-                  </label>
-                  <h2>
-                    {slide.value2[0]}
-                    <label className={stylesP.centav}>{slide.value2[1]}</label>
-                    <label className={stylesP.off}>{slide.value2[2]}</label>
-                  </h2>
-                  <label className={stylesP.off1}>{slide.parcelation}</label>
-                  <label className={stylesP.off1}>
-                    {slide.button} {""}
-                    {""}
-                    <label className={stylesP.full}>
-                      <i className="fa-solid fa-bolt-lightning"></i> FULL
+    <div>
+      <div className={styles.fill}></div>
+      <section className={styles.sectionCarousel}>
+        <div className={styles.container}>
+          <div className={styles.divTitle}>
+            <h1>Offer of the day</h1>
+          </div>
+          <div className={styles.carousel}>
+            <Swiper
+              slidesPerView={count}
+              navigation
+              pagination={{ clickable: true }}
+              className={styles.slides}
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className={stylesP.offerDay}>
+                    <a href="#">
+                      <img
+                        src="https://http2.mlstatic.com/D_Q_NP_2X_736700-MLU74110477966_012024-V.webp"
+                        alt="cream"
+                      />
+                    </a>
+                    <p>{slide.text}</p>
+                    <label className={stylesP.span}>
+                      <del>{slide.value1}</del>
                     </label>
-                  </label>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                    <h2>
+                      {slide.value2[0]}
+                      <label className={stylesP.centav}>
+                        {slide.value2[1]}
+                      </label>
+                      <label className={stylesP.off}>{slide.value2[2]}</label>
+                    </h2>
+                    <label className={stylesP.off1}>{slide.parcelation}</label>
+                    <label className={stylesP.off1}>
+                      {slide.button} {""}
+                      {""}
+                      <label className={stylesP.full}>
+                        <i className="fa-solid fa-bolt-lightning"></i> FULL
+                      </label>
+                    </label>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };

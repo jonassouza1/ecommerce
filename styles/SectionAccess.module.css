@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   position: absolute;
-  top: 470px;
+  top: 400px;
   height: 286px;
   background-color: #ebebeb;
 }
@@ -11,14 +11,11 @@
 .carousel {
   display: flex;
   justify-content: center;
-
   height: 100%;
   width: 1186px;
   z-index: 1000;
 
 }
-
-
 
 .divAccess {
   display: flex;
@@ -33,19 +30,13 @@
 
 }
 
-
-
 .slides div::after {
   border-radius: 100%;
   position: absolute;
   left: -20px;
   padding: 10px;
   background-color: #fff;
-
-
-
 }
-
 
 .divAccess h3 {
   font-size: 16px;

@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { SectionProducts } from "./components/section-products";
 import { CarouselHistoric } from "./components/section-historic";
+import { Publicity } from "./components/section-publicity";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <SectionAccess />
       <SectionProducts />
       <CarouselHistoric />
+      <Publicity />
     </>
   );
 };
