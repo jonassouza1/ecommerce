@@ -29,9 +29,12 @@
 }
 
 .carousel span {
-
+  height: 7px;
+  width: 7px;
+  border: solid 2px #fff;
+  background-color: #5a5a5a;
   position: relative;
-  bottom: 140px;
+  bottom: 215px;
   z-index: 0;
   z-index: 10;
 }
