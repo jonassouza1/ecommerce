@@ -10,6 +10,11 @@ import "swiper/css/scrollbar";
 import { SectionProducts } from "./components/section-products";
 import { CarouselHistoric } from "./components/section-historic";
 import { Publicity } from "./components/section-publicity";
+import { SectionVideos } from "./components/section-videos";
+import { SectionUndertake } from "./components/section-undertake";
+import { SectionBanner } from "./components/section-banner";
+import { SectionBenefits } from "./components/section-benefits";
+import { SectionPromote } from "./components/section-promote";
 
 const Home = () => {
   return (
@@ -20,6 +25,11 @@ const Home = () => {
       <SectionProducts />
       <CarouselHistoric />
       <Publicity />
+      <SectionVideos />
+      <SectionUndertake />
+      <SectionBanner />
+      <SectionBenefits />
+      <SectionPromote />
     </>
   );
 };
