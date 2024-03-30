@@ -173,5 +173,13 @@
   .containerPublicit {
     justify-content: center;
     height: 500px;
+
+  }
+}
+
+@media(max-width:360px) {
+  .divPublicit {
+    justify-content: space-between;
+    width: 90%;
   }
 }
