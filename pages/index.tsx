@@ -15,6 +15,8 @@ import { SectionUndertake } from "./components/section-undertake";
 import { SectionBanner } from "./components/section-banner";
 import { SectionBenefits } from "./components/section-benefits";
 import { SectionPromote } from "./components/section-promote";
+import { SectionCategory } from "./components/section-category";
+import { SectionInfo } from "./components/section-info";
 
 const Home = () => {
   return (
@@ -30,6 +32,8 @@ const Home = () => {
       <SectionBanner />
       <SectionBenefits />
       <SectionPromote />
+      <SectionCategory />
+      <SectionInfo />
     </>
   );
 };
