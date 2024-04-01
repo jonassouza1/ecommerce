@@ -1,0 +1,95 @@
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 400px;
+  height: 286px;
+  background-color: #ebebeb;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 1186px;
+  z-index: 1000;
+
+}
+
+.divAccess {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px 15px;
+  width: 183px;
+  height: 100%;
+
+}
+
+.slides div::after {
+  border-radius: 100%;
+  position: absolute;
+  left: -20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.divAccess h3 {
+  font-size: 16px;
+}
+
+.divImg {
+  display: flex;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  background-color: #e9e9e9;
+  border-radius: 100%;
+}
+
+.divAccess img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.divAccess span {
+  font-size: 14px;
+}
+
+.divAccess a {
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 6px;
+  color: #3391ff;
+  padding: 6px 8px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+@media(max-width:1200px) {
+  .slides {
+    width: 800px;
+  }
+}
+
+@media(max-width:800px) {
+  .slides {
+    max-width: 600px;
+  }
+}
+
+@media(max-width:630px) {
+  .slides {
+    width: 500px;
+  }
+}
+
+@media(max-width:530px) {
+  .slides {
+    width: 250px;
+  }
+}

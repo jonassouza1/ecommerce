@@ -1,5 +1,5 @@
-import styles from "styles/Header.module.css";
-import { NavBar } from "../navbar";
+import styles from "styles/header/Header.module.css";
+import { NavBar } from "./navbar/NavBar";
 
 export const Header = () => {
   return (
