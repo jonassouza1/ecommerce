@@ -6,14 +6,14 @@ export const SectionBanner = () => {
         <div className={styles.divBanner}>
           <img
             src="https://http2.mlstatic.com/D_NQ_684629-MLA74306154898_022024-OO.jpg"
-            alt=""
+            alt="beer image"
           />
         </div>
         <div className={styles.divText}>
           <div className={styles.divImg}>
             <img
               src="https://http2.mlstatic.com/D_NQ_986957-MLA74306125284_022024-OO.jpg"
-              alt=""
+              alt="beer logo image"
             />
           </div>
           <div className={styles.divTitle}>

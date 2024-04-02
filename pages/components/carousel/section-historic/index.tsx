@@ -1,77 +1,13 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselHistoric.module.css";
 import stylesP from "styles/carousel/CarouselProducts.module.css";
+import { dateHistoric } from "./dateHistoric";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const CarouselHistoric = () => {
   const [count, setCount] = useState<number>(6);
-  const [slides, setSlides] = useState([
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping  ",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-  ]);
+  const [slides, setSlides] = useState(dateHistoric);
 
   useEffect(() => {
     const handleResize = async () => {
@@ -118,11 +54,8 @@ export const CarouselHistoric = () => {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className={stylesP.offerDay}>
-                    <a href="#">
-                      <img
-                        src="https://http2.mlstatic.com/D_Q_NP_2X_736700-MLU74110477966_012024-V.webp"
-                        alt="cream"
-                      />
+                    <a className={stylesP.divImg} href="#">
+                      <img src={slide.image} alt="cream" />
                     </a>
                     <p>{slide.text}</p>
                     <label className={stylesP.span}>

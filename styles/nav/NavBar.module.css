@@ -6,32 +6,79 @@
 }
 
 .divCep {
+  display: flex;
+  width: 88px;
+  height: 28px;
   text-decoration: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.divCep i {
+  position: absolute;
+  font-size: 22px;
+  color: #000;
+  top: -5px;
+}
+
+.cep {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.cep span {
+  font-size: 11px;
+  color: #303030;
+}
+
+.cep p {
+  font-size: 13px;
+  color: #000;
 }
 
 .divList {
   display: flex;
-
+  align-items: center;
   list-style: none;
+  margin-bottom: 5px;
+}
 
+.divList li {
+  margin-right: 15px;
 }
 
 .divList li a {
-  display: flex;
-  padding: 5px 10px;
+  font-size: 13px;
   transition: 0.3s;
   text-decoration: none;
-  font-size: 14px;
-
+  color: #000;
 }
 
-
-.father {
+.divList .free {
   position: relative;
 }
 
-.children i {
+.divList .free p {
+  font-size: 8px;
+  font-weight: 600;
+  padding: 1px 3px;
+  background-color: #00a650;
+  letter-spacing: 2px;
+  position: absolute;
+  right: 25%;
+  top: -10px;
+  border-radius: 8px;
+}
 
+.father {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.children i {
+  font-size: 8px;
   margin-left: 5px;
 }
 
@@ -39,7 +86,26 @@
   display: none;
   position: absolute;
   border-radius: 5px;
+  margin-top: 10px;
+  background-color: #f7f7f7;
 }
+
+
+.dropdown i {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #303030;
+  position: absolute;
+  top: -5px;
+  right: 61%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+
 
 .father:hover .dropdown {
   display: flex;
@@ -47,8 +113,6 @@
   justify-content: center;
   z-index: 5;
   width: 240px;
-
-  background-color: #202324;
 }
 
 .divList .father .dropdown a {

@@ -1,28 +1,8 @@
 import { useState } from "react";
+import { datePubliciti } from "./datePublicit";
 import styles from "styles/section/Publicity.module.css";
 export const Publicity = () => {
-  const [publict, setPublicit] = useState([
-    {
-      text: "Free shipping on millions of products starting at $29",
-      image:
-        "https://http2.mlstatic.com/resources/frontend/statics/loyal/v2/truckgiftv4@2x.png",
-    },
-    {
-      text: "Disney+ and Star+ at no cost",
-      image:
-        "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/disneyplus/widget-home/combo-widgetl6@2x.jpg",
-    },
-    {
-      text: "Deezer Premium 12 months free of charge",
-      image:
-        "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/deezer/rebranding/deezer-logo-circle-vdp-filled@3x.png",
-    },
-    {
-      text: "60% OFF on Ultrapasse and other benefits",
-      image:
-        "https://http2.mlstatic.com/resources/frontend/statics/loyal/ultrapasse-widget@2x.png",
-    },
-  ]);
+  const [publict, setPublicit] = useState(datePubliciti);
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -31,7 +11,7 @@ export const Publicity = () => {
             <h1>Subscribe to</h1>
             <img
               src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/meliplus/home/meliplus-outline-pill@3x.png"
-              alt=""
+              alt="logo image"
             />
           </div>
           <h2>

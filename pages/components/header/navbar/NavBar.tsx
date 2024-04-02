@@ -5,28 +5,31 @@ export const NavBar = () => {
   return (
     <nav className={styles.divNav}>
       <a href="#" className={styles.divCep}>
-        <span>
-          <i className="fa-solid fa-location-dot"></i> informe seu CEP
-        </span>
+        <i className="fa-solid fa-location-dot"></i>
+        <div className={styles.cep}>
+          <span>Enter your</span>
+          <p>CEP</p>
+        </div>
       </a>
 
       <ul className={styles.divList}>
         <li className={styles.father}>
           <a href="#" target="_blank" className={styles.children}>
-            categories <i className="fa-solid fa-chevron-down"></i>
+            Categories <i className="fa-solid fa-chevron-down"></i>
           </a>
           <div className={styles.dropdown}>
+            <i></i>
             <a href="#" target="_blank">
-              vehicles
+              Vehicles
             </a>
             <a href="#" target="_blank">
-              supermarket
+              Supermarket
             </a>
             <a href="#" target="_blank">
-              tecnology
+              Tecnology
             </a>
             <a href="#" target="_blank">
-              home appliances
+              Home appliances
             </a>
           </div>
         </li>
@@ -37,27 +40,33 @@ export const NavBar = () => {
         </li>
         <li>
           <a href="#" target="_blank">
-            historic
+            Historic
           </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            supermarket
+            Supermarket
+          </a>
+        </li>
+        <li className={styles.free}>
+          <a href="#" target="_blank">
+            <p>Free</p>
+            Play Market
           </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            fashion
+            Fashion
           </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            sell
+            Sell
           </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            contat
+            Contat
           </a>
         </li>
       </ul>
