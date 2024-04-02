@@ -1,75 +1,11 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselProducts.module.css";
+import { productsDate } from "./productsDate";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const CarouselProducts = () => {
   const [count, setCount] = useState<number>(6);
-  const [slides, setSlides] = useState([
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping  ",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-    {
-      image: "/account.png",
-      text: "Take advantage of offers to buy everything you want",
-      value1: "$1009",
-      value2: ["$7", "03", "16% OFF"],
-      parcelation: "in 10x $77,90 interest-free",
-      button: "free shipping",
-    },
-  ]);
+  const [slides, setSlides] = useState(productsDate);
 
   useEffect(() => {
     const handleResize = async () => {

@@ -7,7 +7,7 @@ export const SectionVideos = () => {
           <div className={styles.divImg}>
             <img
               src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/touchpoint_trailer/logo-mercado-play.png"
-              alt=""
+              alt="image backgroud of films"
             />
           </div>
           <div className={styles.title}>

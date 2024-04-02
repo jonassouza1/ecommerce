@@ -77,9 +77,6 @@
   width: 100%;
 }
 
-.offerDay img {
-  width: 100%;
-}
 
 .offerDay p {
   font-size: 14px;
@@ -117,6 +114,12 @@
   color: #00a650;
   font-size: 12px;
   font-weight: 600;
+
+}
+
+.offerDay .divImg {
+  width: 170px;
+  height: 190px;
 
 }
 

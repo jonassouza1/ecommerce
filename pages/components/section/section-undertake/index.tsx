@@ -1,144 +1,46 @@
+import { useState } from "react";
 import styles from "styles/section/SectionUndertake.module.css";
+import { images } from "./image";
 
 export const SectionUndertake = () => {
+  const [state, setState] = useState(images);
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.divContainer}>
-          <div className={styles.divTitle}>
-            <p>BEST FRAGRANCES</p>
-          </div>
-          <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/D_NQ_867960-MLA75379063985_032024-OO.webp"
-              alt=""
-            />
-          </div>
-          <ul className={styles.list}>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.divContainer}>
-          <div className={styles.divTitle}>
-            <p>BEST FRAGRANCES</p>
-          </div>
-          <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/D_NQ_867960-MLA75379063985_032024-OO.webp"
-              alt=""
-            />
-          </div>
-          <ul className={styles.list}>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.divContainer}>
-          <div className={styles.divTitle}>
-            <p>BEST FRAGRANCES</p>
-          </div>
-          <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/D_NQ_867960-MLA75379063985_032024-OO.webp"
-              alt=""
-            />
-          </div>
-          <ul className={styles.list}>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://http2.mlstatic.com/D_950204-MLA49695604575_042022-I.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+        {state.map((el, i) => {
+          return (
+            <div key={i} className={styles.divContainer}>
+              <div className={styles.divTitle}>
+                <p>{el.title}</p>
+              </div>
+              <div className={styles.divImg}>
+                <img src={el.image} alt={el.altT} />
+              </div>
+              <ul className={styles.list}>
+                <li>
+                  <a href="#">
+                    <img src={el.img} alt={el.alt} />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src={el.img1} alt={el.alt1} />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src={el.img2} alt={el.alt2} />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src={el.img3} alt={el.alt3} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

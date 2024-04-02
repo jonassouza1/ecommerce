@@ -11,7 +11,7 @@ export const SectionBenefits = () => {
               <div className={styles.divImg}>
                 <img
                   src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/disneyplus/comboplus-square.jpg"
-                  alt=""
+                  alt="banner Disney"
                 />
               </div>
               <div className={styles.divSpan}>
@@ -25,7 +25,7 @@ export const SectionBenefits = () => {
               <div className={styles.divImg}>
                 <img
                   src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/max/logo/max-square@2x.png"
-                  alt=""
+                  alt="banner Max"
                 />
               </div>
               <div className={styles.divSpan}>
