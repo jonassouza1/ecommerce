@@ -9,7 +9,7 @@ async function query(queryObject) {
     password: process.env.POSTGRES_PASSWORD,
     ssl: process.env.NODE_ENV === "development" ? false : true,
   });
-  console.log(process.env.POSTGRES_USER);
+
   try {
     await client.connect();
     const result = await client.query(queryObject);

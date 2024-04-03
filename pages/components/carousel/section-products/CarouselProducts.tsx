@@ -45,10 +45,7 @@ export const CarouselProducts = () => {
               <div className={styles.containerSlides}>
                 <div className={styles.offerDay}>
                   <a href="#">
-                    <img
-                      src="https://http2.mlstatic.com/D_Q_NP_2X_736700-MLU74110477966_012024-V.webp"
-                      alt="cream"
-                    />
+                    <img src={slide.image} alt={slide.alt} />
                   </a>
                   <p>{slide.text}</p>
                   <label className={styles.span}>

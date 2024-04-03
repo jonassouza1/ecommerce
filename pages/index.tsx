@@ -28,12 +28,12 @@ const Home = () => {
         <Carousel />
         <SectionAccess />
         <SectionProducts />
-        <CarouselHistoric />
         <Publicity />
         <SectionVideos />
         <SectionUndertake />
-        <SectionBanner />
         <SectionBenefits />
+        <CarouselHistoric />
+        <SectionBanner />
         <SectionPromote />
         <SectionCategory />
         <SectionInfo />

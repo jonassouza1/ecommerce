@@ -27,6 +27,9 @@ export const DivFooter = () => {
                 <li>
                   <a href="#">{el.text4}</a>
                 </li>
+                <li>
+                  <a href="#">{el.text5}</a>
+                </li>
               </ul>
             </div>
           );
