@@ -1,6 +1,6 @@
 import styles from "styles/section/SectionBenefits.module.css";
 
-export const SectionBenefits = () => {
+const SectionBenefits = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -39,3 +39,5 @@ export const SectionBenefits = () => {
     </section>
   );
 };
+
+export default SectionBenefits;

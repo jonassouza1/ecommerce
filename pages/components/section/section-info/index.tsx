@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "styles/section/SectionInfo.module.css";
-import { info } from "./info";
+import info from "./info";
 
-export const SectionInfo = () => {
+const SectionInfo = () => {
   const [state, setState] = useState(info);
   return (
     <section className={styles.section}>
@@ -25,3 +25,4 @@ export const SectionInfo = () => {
     </section>
   );
 };
+export default SectionInfo;

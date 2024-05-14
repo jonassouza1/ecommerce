@@ -1,7 +1,7 @@
 import styles from "styles/section/SectionProducts.module.css";
-import { CarouselProducts } from "./CarouselProducts";
+import CarouselProducts from "./CarouselProducts";
 
-export const SectionProducts = () => {
+const SectionProducts = () => {
   return (
     <div>
       <div className={styles.fill}></div>
@@ -34,3 +34,5 @@ export const SectionProducts = () => {
     </div>
   );
 };
+
+export default SectionProducts;

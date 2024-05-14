@@ -1,4 +1,4 @@
-export const acessDate = [
+const acessDate = [
   {
     title: "Login to your account",
     image: "/account.png",
@@ -48,3 +48,5 @@ export const acessDate = [
     button: "Go to Categories",
   },
 ];
+
+export default acessDate;

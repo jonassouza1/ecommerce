@@ -1,8 +1,8 @@
 import styles from "styles/footer/ButtonFooter.module.css";
-import { information } from "./infoFooter";
+import information from "./infoFooter";
 import { useState } from "react";
 
-export const DivFooter = () => {
+const DivFooter = () => {
   const [info, setInfo] = useState(information);
   return (
     <div className={styles.section}>
@@ -38,3 +38,4 @@ export const DivFooter = () => {
     </div>
   );
 };
+export default DivFooter;

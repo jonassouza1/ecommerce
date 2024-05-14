@@ -1,4 +1,4 @@
-export const dateHistoric = [
+const dateHistoric = [
   {
     image:
       "https://http2.mlstatic.com/D_Q_NP_2X_805884-MLB74051865036_012024-T.webp",
@@ -72,3 +72,5 @@ export const dateHistoric = [
     button: "free shipping",
   },
 ];
+
+export default dateHistoric;

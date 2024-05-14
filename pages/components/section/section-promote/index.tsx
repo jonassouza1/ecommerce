@@ -1,6 +1,6 @@
 import styles from "styles/section/SectionPromote.module.css";
 
-export const SectionPromote = () => {
+const SectionPromote = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -36,3 +36,5 @@ export const SectionPromote = () => {
     </section>
   );
 };
+
+export default SectionPromote;

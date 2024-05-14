@@ -1,5 +1,5 @@
 import styles from "styles/section/SectionBanner.module.css";
-export const SectionBanner = () => {
+const SectionBanner = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -31,3 +31,4 @@ export const SectionBanner = () => {
     </section>
   );
 };
+export default SectionBanner;

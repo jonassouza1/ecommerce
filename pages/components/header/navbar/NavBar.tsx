@@ -1,7 +1,7 @@
 import styles from "styles/nav/NavBar.module.css";
-import { NavResponsive } from "./nav-responsive";
+import NavResponsive from "./nav-responsive";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <nav className={styles.divNav}>
       <a href="#" className={styles.divCep}>
@@ -74,3 +74,5 @@ export const NavBar = () => {
     </nav>
   );
 };
+
+export default NavBar;

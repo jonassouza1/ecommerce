@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselProducts.module.css";
-import { productsDate } from "./productsDate";
+import productsDate from "./productsDate";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export const CarouselProducts = () => {
+const CarouselProducts = () => {
   const [count, setCount] = useState<number>(6);
   const [slides, setSlides] = useState(productsDate);
 
@@ -73,3 +73,5 @@ export const CarouselProducts = () => {
     </div>
   );
 };
+
+export default CarouselProducts;
