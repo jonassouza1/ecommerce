@@ -1,5 +1,6 @@
 import styles from "styles/section/SectionVideos.module.css";
-export const SectionVideos = () => {
+
+const SectionVideos = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -33,3 +34,4 @@ export const SectionVideos = () => {
     </section>
   );
 };
+export default SectionVideos;

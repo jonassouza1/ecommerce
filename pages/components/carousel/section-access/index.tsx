@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { acessDate } from "./acessDate";
+import acessDate from "./acessDate";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "styles/section/SectionAccess.module.css";
 
-export const SectionAccess = () => {
+const SectionAccess = () => {
   const [count, setCount] = useState<number>(6);
 
   const [slides, setSlides] = useState(acessDate);
@@ -55,3 +55,4 @@ export const SectionAccess = () => {
     </section>
   );
 };
+export default SectionAccess;

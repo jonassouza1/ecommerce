@@ -1,8 +1,8 @@
 import styles from "styles/footer/ButtonFooter.module.css";
-import { DivFooter } from "./DivFooter";
+import DivFooter from "./DivFooter";
 import { useState, useRef } from "react";
 
-export const ButtonFooter = () => {
+const ButtonFooter = () => {
   const [state, setState] = useState(false);
 
   const divRef = useRef(null);
@@ -29,3 +29,5 @@ export const ButtonFooter = () => {
     </div>
   );
 };
+
+export default ButtonFooter;

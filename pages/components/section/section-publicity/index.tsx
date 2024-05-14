@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { datePubliciti } from "./datePublicit";
+import datePubliciti from "./datePublicit";
 import styles from "styles/section/Publicity.module.css";
-export const Publicity = () => {
+
+const Publicity = () => {
   const [publict, setPublicit] = useState(datePubliciti);
   return (
     <section className={styles.section}>
@@ -48,3 +49,4 @@ export const Publicity = () => {
     </section>
   );
 };
+export default Publicity;

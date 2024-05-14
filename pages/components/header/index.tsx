@@ -1,7 +1,7 @@
 import styles from "styles/header/Header.module.css";
-import { NavBar } from "./navbar/NavBar";
+import NavBar from "./navbar/NavBar";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.divLogo}>
@@ -30,3 +30,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

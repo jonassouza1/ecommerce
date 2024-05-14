@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "styles/carousel/Carousel.module.css";
-export const Carousel = () => {
+const Carousel = () => {
   const images = [
     { id: "1", image: "/computer.jpg" },
     { id: "2", image: "/cosmetics.jpg" },
@@ -24,3 +24,4 @@ export const Carousel = () => {
     </section>
   );
 };
+export default Carousel;

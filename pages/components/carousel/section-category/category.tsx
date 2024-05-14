@@ -1,4 +1,4 @@
-export const category = [
+const category = [
   {
     image:
       "https://http2.mlstatic.com/storage/homes-korriban/assets/icons/xxhdpi/home_steering-wheel-category.webp",
@@ -121,3 +121,5 @@ export const category = [
     title2: "More Categories",
   },
 ];
+
+export default category;

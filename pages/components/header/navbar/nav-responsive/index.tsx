@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "styles/nav/NavResponsive.module.css";
 
-export const NavResponsive = () => {
+const NavResponsive = () => {
   return (
     <div className={styles.container}>
       <input
@@ -35,3 +35,5 @@ export const NavResponsive = () => {
     </div>
   );
 };
+
+export default NavResponsive;

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import styles from "styles/section/SectionCategory.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { category } from "./category";
+import category from "./category";
 
-export const SectionCategory = () => {
+const SectionCategory = () => {
   const [count, setCount] = useState<number>(4);
   const [state, setState] = useState(category);
 
@@ -79,3 +79,4 @@ export const SectionCategory = () => {
     </section>
   );
 };
+export default SectionCategory;

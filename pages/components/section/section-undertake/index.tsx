@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "styles/section/SectionUndertake.module.css";
-import { images } from "./image";
+import images from "./image";
 
-export const SectionUndertake = () => {
+const SectionUndertake = () => {
   const [state, setState] = useState(images);
   return (
     <section className={styles.section}>
@@ -45,3 +45,5 @@ export const SectionUndertake = () => {
     </section>
   );
 };
+
+export default SectionUndertake;
