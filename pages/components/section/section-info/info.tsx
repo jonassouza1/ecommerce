@@ -1,4 +1,4 @@
-const info = [
+export const info = [
   {
     image:
       "https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/payment.svg",
@@ -24,5 +24,3 @@ const info = [
     button: "How we protect you",
   },
 ];
-
-export default info;

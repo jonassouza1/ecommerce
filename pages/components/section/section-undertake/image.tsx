@@ -1,4 +1,4 @@
-const images = [
+export const images = [
   {
     title: "EVERYTHING FOR VEHICLES",
     image:
@@ -42,4 +42,3 @@ const images = [
     alt3: " vacuum cleaner image 4",
   },
 ];
-export default images;

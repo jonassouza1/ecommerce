@@ -1,5 +1,5 @@
 import { useState } from "react";
-import datePubliciti from "./datePublicit";
+import { datePubliciti } from "./datePublicit";
 import styles from "styles/section/Publicity.module.css";
 
 const Publicity = () => {

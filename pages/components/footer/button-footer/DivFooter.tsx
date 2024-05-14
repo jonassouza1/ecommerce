@@ -1,5 +1,5 @@
 import styles from "styles/footer/ButtonFooter.module.css";
-import information from "./infoFooter";
+import { information } from "./infoFooter";
 import { useState } from "react";
 
 const DivFooter = () => {

@@ -1,4 +1,4 @@
-const information = [
+export const information = [
   {
     title: "Over the",
     text: "Free market",
@@ -44,5 +44,3 @@ const information = [
     text5: "Paramount+",
   },
 ];
-
-export default information;

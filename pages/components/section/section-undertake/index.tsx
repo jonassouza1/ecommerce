@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "styles/section/SectionUndertake.module.css";
-import images from "./image";
+import { images } from "./image";
 
 const SectionUndertake = () => {
   const [state, setState] = useState(images);

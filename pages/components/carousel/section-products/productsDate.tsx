@@ -1,4 +1,4 @@
-const productsDate = [
+export const productsDate = [
   {
     image:
       "https://http2.mlstatic.com/D_Q_NP_2X_629121-MLA72550682668_112023-AB.webp",
@@ -80,4 +80,3 @@ const productsDate = [
     button: "free shipping",
   },
 ];
-export default productsDate;
