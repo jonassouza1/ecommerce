@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselHistoric.module.css";
 import stylesP from "styles/carousel/CarouselProducts.module.css";
-import dateHistoric from "./dateHistoric";
+import { dateHistoric } from "./dateHistoric";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

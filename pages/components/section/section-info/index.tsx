@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "styles/section/SectionInfo.module.css";
-import info from "./info";
+import { info } from "./info";
 
 const SectionInfo = () => {
   const [state, setState] = useState(info);

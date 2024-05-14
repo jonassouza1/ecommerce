@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselProducts.module.css";
-import productsDate from "./productsDate";
+import { productsDate } from "./productsDate";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const CarouselProducts = () => {

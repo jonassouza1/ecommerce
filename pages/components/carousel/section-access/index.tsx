@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import acessDate from "./acessDate";
+import { acessDate } from "./acessDate";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "styles/section/SectionAccess.module.css";

@@ -1,4 +1,4 @@
-const datePubliciti = [
+export const datePubliciti = [
   {
     text: "Free shipping on millions of products starting at $29",
     image:
@@ -20,5 +20,3 @@ const datePubliciti = [
       "https://http2.mlstatic.com/resources/frontend/statics/loyal/ultrapasse-widget@2x.png",
   },
 ];
-
-export default datePubliciti;
