@@ -5,10 +5,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const SectionCategory = () => {
   const [count, setCount] = useState<number>(4);
   const [state, setState] = useState([]);
+  const urlLocal = "http://localhost:3000/api/v1/date/category";
+  const urlProduction =
+    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/category";
 
   useEffect(() => {
     const fatchDate = async () => {
-      const dates = await fetch("http://localhost:3000/api/v1/date/category");
+      const url =
+        process.env.NODE_ENV === "production" ? urlProduction : urlLocal;
+      const dates = await fetch(`${url}`);
       const categoryResult = await dates.json();
       setState(categoryResult.result);
     };

@@ -7,7 +7,6 @@ exports.up = (pgm) => {
     id: { type: "SERIAL", primaryKey: true },
     image: { type: "VARCHAR(100)", notNull: true },
     text: { type: "VARCHAR(300)", notNull: true },
-    value: { type: "VARCHAR(100)", notNull: true },
     value1: { type: "VARCHAR(100)", notNull: true },
     value2: { type: "VARCHAR(100)", notNull: true },
     parcelation: { type: "VARCHAR(100)", notNull: true },
@@ -16,4 +15,6 @@ exports.up = (pgm) => {
   });
 };
 
-exports.down = (pgm) => {};
+exports.down = (pgm) => {
+  pgm.sql("ALTER TABLE historic DROP COLUMN value;");
+};

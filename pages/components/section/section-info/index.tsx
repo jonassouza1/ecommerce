@@ -4,9 +4,15 @@ import styles from "styles/section/SectionInfo.module.css";
 const SectionInfo = () => {
   const [state, setState] = useState([]);
 
+  const urlLocal = "http://localhost:3000/api/v1/date/payments";
+  const urlProduction =
+    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/payments";
+
   useEffect(() => {
     const fatchDate = async () => {
-      const dates = await fetch("http://localhost:3000/api/v1/date/payments");
+      const url =
+        process.env.NODE_ENV === "production" ? urlProduction : urlLocal;
+      const dates = await fetch(`${url}`);
       const resultlist = await dates.json();
       const information = await resultlist.result;
       setState(information);
