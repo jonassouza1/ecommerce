@@ -7,12 +7,15 @@ const SectionAccess = () => {
   const [count, setCount] = useState<number>(6);
   const [slides, setSlides] = useState([]);
 
+  const urlLocal = "http://localhost:3000/api/v1/date/datesacess";
+  const urlProduction =
+    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/datesacess";
+
   useEffect(() => {
     const fatchDate = async () => {
-      const urlLocal = "http://localhost:3000/api/v1/date/datesacess";
-      const dates = await fetch(
-        "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/datesacess",
-      );
+      const url =
+        process.env.NODE_ENV === "production" ? urlProduction : urlLocal;
+      const dates = await fetch(`${url}`);
       const datesResult = await dates.json();
       setSlides(datesResult.result);
     };
