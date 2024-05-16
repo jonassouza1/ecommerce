@@ -9,7 +9,10 @@ const SectionAccess = () => {
 
   useEffect(() => {
     const fatchDate = async () => {
-      const dates = await fetch("http://localhost:3000/api/v1/date/datesacess");
+      const urlLocal = "http://localhost:3000/api/v1/date/datesacess";
+      const dates = await fetch(
+        "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/datesacess",
+      );
       const datesResult = await dates.json();
       setSlides(datesResult.result);
     };
