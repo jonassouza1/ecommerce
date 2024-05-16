@@ -20,7 +20,9 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_app.tsx",
-    "jest.config.js"
+    "jest.config.js",
+    "painel/acess-date/index.ts",
+    "pages/components/carousel/section-access/index.js"
   ],
   "exclude": ["node_modules"]
 }

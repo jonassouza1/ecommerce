@@ -3,11 +3,12 @@
 exports.shorthands = undefined;
 
 exports.up = (pgm) => {
-  pgm.createTable("acessdates", {
+  pgm.createTable("payment", {
     id: { type: "SERIAL", primaryKey: true },
+    image: { type: "VARCHAR(200)", notNull: true },
+    alt: { type: "VARCHAR(200)", notNull: true },
     title: { type: "VARCHAR(100)", notNull: true },
-    image: { type: "VARCHAR(100)", notNull: true, unique: true },
-    text: { type: "VARCHAR(255)", notNull: true },
+    text: { type: "VARCHAR(200)", notNull: true },
     button: { type: "VARCHAR(100)", notNull: true },
     criado_em: { type: "TIMESTAMP", default: pgm.func("current_timestamp") },
   });

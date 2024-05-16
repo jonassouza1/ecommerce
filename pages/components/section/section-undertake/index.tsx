@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "styles/section/SectionUndertake.module.css";
-import { images } from "./image";
-
 const SectionUndertake = () => {
-  const [state, setState] = useState(images);
+  const [state, setState] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/images");
+      const resultlist = await dates.json();
+      const images = await resultlist.result;
+      setState(images);
+    };
+    fatchDate();
+  }, []);
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -14,7 +22,7 @@ const SectionUndertake = () => {
                 <p>{el.title}</p>
               </div>
               <div className={styles.divImg}>
-                <img src={el.image} alt={el.altT} />
+                <img src={el.url} alt={el.altt} />
               </div>
               <ul className={styles.list}>
                 <li>

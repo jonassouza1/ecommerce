@@ -1,13 +1,22 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselHistoric.module.css";
 import stylesP from "styles/carousel/CarouselProducts.module.css";
-import { dateHistoric } from "./dateHistoric";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const CarouselHistoric = () => {
   const [count, setCount] = useState<number>(6);
-  const [slides, setSlides] = useState(dateHistoric);
+  const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/historic");
+      const resultlist = await dates.json();
+      const historic = await resultlist.result;
+      setSlides(historic);
+    };
+    fatchDate();
+  }, []);
 
   useEffect(() => {
     const handleResize = async () => {
@@ -62,11 +71,13 @@ const CarouselHistoric = () => {
                       <del>{slide.value1}</del>
                     </label>
                     <h2>
-                      {slide.value2[0]}
+                      {JSON.parse(slide.value2)[0]}
                       <label className={stylesP.centav}>
-                        {slide.value2[1]}
+                        {JSON.parse(slide.value2)[1]}
                       </label>
-                      <label className={stylesP.off}>{slide.value2[2]}</label>
+                      <label className={stylesP.off}>
+                        {JSON.parse(slide.value2)[2]}
+                      </label>
                     </h2>
                     <label className={stylesP.off1}>{slide.parcelation}</label>
                     <label className={stylesP.off1}>

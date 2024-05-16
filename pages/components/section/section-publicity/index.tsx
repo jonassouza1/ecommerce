@@ -1,9 +1,19 @@
-import { useState } from "react";
-import { datePubliciti } from "./datePublicit";
+import { useState, useEffect } from "react";
+
 import styles from "styles/section/Publicity.module.css";
 
 const Publicity = () => {
-  const [publict, setPublicit] = useState(datePubliciti);
+  const [publict, setPublicit] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/publicitys");
+      const resultlist = await dates.json();
+      const publicity = await resultlist.result;
+      setPublicit(publicity);
+    };
+    fatchDate();
+  }, []);
   return (
     <section className={styles.section}>
       <div className={styles.container}>
