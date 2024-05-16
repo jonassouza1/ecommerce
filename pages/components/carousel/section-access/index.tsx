@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { acessDate } from "./acessDate";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "styles/section/SectionAccess.module.css";
 
 const SectionAccess = () => {
   const [count, setCount] = useState<number>(6);
+  const [slides, setSlides] = useState([]);
 
-  const [slides, setSlides] = useState(acessDate);
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/datesacess");
+      const datesResult = await dates.json();
+      setSlides(datesResult.result);
+    };
+    fatchDate();
+  }, []);
 
   useEffect(() => {
     const handleResize = async () => {

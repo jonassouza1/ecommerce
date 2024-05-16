@@ -1,11 +1,19 @@
 import { useState, useEffect } from "react";
 import styles from "styles/section/SectionCategory.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { category } from "./category";
 
 const SectionCategory = () => {
   const [count, setCount] = useState<number>(4);
-  const [state, setState] = useState(category);
+  const [state, setState] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/category");
+      const categoryResult = await dates.json();
+      setState(categoryResult.result);
+    };
+    fatchDate();
+  }, []);
 
   useEffect(() => {
     const handleResize = async () => {

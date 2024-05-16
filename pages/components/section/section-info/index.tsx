@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "styles/section/SectionInfo.module.css";
-import { info } from "./info";
 
 const SectionInfo = () => {
-  const [state, setState] = useState(info);
+  const [state, setState] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/payments");
+      const resultlist = await dates.json();
+      const information = await resultlist.result;
+      setState(information);
+    };
+    fatchDate();
+  }, []);
   return (
     <section className={styles.section}>
       <div className={styles.container}>

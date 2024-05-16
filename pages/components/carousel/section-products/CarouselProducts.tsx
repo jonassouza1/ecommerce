@@ -1,11 +1,21 @@
 import { useState, useEffect } from "react";
 import styles from "styles/carousel/CarouselProducts.module.css";
-import { productsDate } from "./productsDate";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const CarouselProducts = () => {
   const [count, setCount] = useState<number>(6);
-  const [slides, setSlides] = useState(productsDate);
+  const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch("http://localhost:3000/api/v1/date/products");
+      const resultlist = await dates.json();
+      const products = await resultlist.result;
+      setSlides(products);
+    };
+    fatchDate();
+  }, []);
 
   useEffect(() => {
     const handleResize = async () => {
@@ -52,9 +62,13 @@ const CarouselProducts = () => {
                     <del>{slide.value1}</del>
                   </label>
                   <h2>
-                    {slide.value2[0]}
-                    <label className={styles.centav}>{slide.value2[1]}</label>
-                    <label className={styles.off}>{slide.value2[2]}</label>
+                    {JSON.parse(slide.value2)[0]}
+                    <label className={styles.centav}>
+                      {JSON.parse(slide.value2)[1]}
+                    </label>
+                    <label className={styles.off}>
+                      {JSON.parse(slide.value2)[2]}
+                    </label>
                   </h2>
                   <label className={styles.off1}>{slide.parcelation}</label>
                   <label className={styles.off1}>

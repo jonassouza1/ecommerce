@@ -1,9 +1,22 @@
 import styles from "styles/footer/ButtonFooter.module.css";
-import { information } from "./infoFooter";
+import { useEffect } from "react";
+
 import { useState } from "react";
 
 const DivFooter = () => {
-  const [info, setInfo] = useState(information);
+  const [info, setInfo] = useState([]);
+
+  useEffect(() => {
+    const fatchDate = async () => {
+      const dates = await fetch(
+        "http://localhost:3000/api/v1/date/informations",
+      );
+      const resultlist = await dates.json();
+      const information = await resultlist.result;
+      setInfo(information);
+    };
+    fatchDate();
+  }, []);
   return (
     <div className={styles.section}>
       <div className={styles.divContainer}>
