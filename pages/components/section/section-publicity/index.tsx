@@ -5,9 +5,15 @@ import styles from "styles/section/Publicity.module.css";
 const Publicity = () => {
   const [publict, setPublicit] = useState([]);
 
+  const urlLocal = "http://localhost:3000/api/v1/date/publicitys";
+  const urlProduction =
+    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/publicitys";
+
   useEffect(() => {
     const fatchDate = async () => {
-      const dates = await fetch("http://localhost:3000/api/v1/date/publicitys");
+      const url =
+        process.env.NODE_ENV === "production" ? urlProduction : urlLocal;
+      const dates = await fetch(`${url}`);
       const resultlist = await dates.json();
       const publicity = await resultlist.result;
       setPublicit(publicity);

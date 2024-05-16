@@ -7,9 +7,15 @@ const CarouselProducts = () => {
   const [count, setCount] = useState<number>(6);
   const [slides, setSlides] = useState([]);
 
+  const urlLocal = "http://localhost:3000/api/v1/date/products";
+  const urlProduction =
+    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/products";
+
   useEffect(() => {
     const fatchDate = async () => {
-      const dates = await fetch("http://localhost:3000/api/v1/date/products");
+      const url =
+        process.env.NODE_ENV === "production" ? urlProduction : urlLocal;
+      const dates = await fetch(`${url}`);
       const resultlist = await dates.json();
       const products = await resultlist.result;
       setSlides(products);

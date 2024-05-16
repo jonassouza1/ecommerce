@@ -3,9 +3,15 @@ import styles from "styles/section/SectionUndertake.module.css";
 const SectionUndertake = () => {
   const [state, setState] = useState([]);
 
+  const urlLocal = "http://localhost:3000/api/v1/date/images";
+  const urlProduction =
+    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/images";
+
   useEffect(() => {
     const fatchDate = async () => {
-      const dates = await fetch("http://localhost:3000/api/v1/date/images");
+      const url =
+        process.env.NODE_ENV === "production" ? urlProduction : urlLocal;
+      const dates = await fetch(`${url}`);
       const resultlist = await dates.json();
       const images = await resultlist.result;
       setState(images);
