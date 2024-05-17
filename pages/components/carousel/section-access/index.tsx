@@ -8,8 +8,10 @@ const SectionAccess = () => {
   const [slides, setSlides] = useState([]);
 
   const urlLocal = "http://localhost:3000/api/v1/date/datesacess";
-  const urlProduction =
+  const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/datesacess";
+  const urlProduction =
+    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/datesacess";
 
   useEffect(() => {
     const fatchDate = async () => {

@@ -6,8 +6,10 @@ const Publicity = () => {
   const [publict, setPublicit] = useState([]);
 
   const urlLocal = "http://localhost:3000/api/v1/date/publicitys";
-  const urlProduction =
+  const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/publicitys";
+  const urlProduction =
+    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/publicitys";
 
   useEffect(() => {
     const fatchDate = async () => {

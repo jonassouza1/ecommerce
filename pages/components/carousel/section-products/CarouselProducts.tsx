@@ -8,9 +8,10 @@ const CarouselProducts = () => {
   const [slides, setSlides] = useState([]);
 
   const urlLocal = "http://localhost:3000/api/v1/date/products";
-  const urlProduction =
+  const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/products";
-
+  const urlProduction =
+    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/products";
   useEffect(() => {
     const fatchDate = async () => {
       const url =
