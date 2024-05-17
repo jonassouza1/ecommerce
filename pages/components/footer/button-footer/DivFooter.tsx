@@ -7,8 +7,10 @@ const DivFooter = () => {
   const [info, setInfo] = useState([]);
 
   const urlLocal = "http://localhost:3000/api/v1/date/informations";
-  const urlProduction =
+  const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/informations";
+  const urlProduction =
+    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/informations";
 
   useEffect(() => {
     const fatchDate = async () => {

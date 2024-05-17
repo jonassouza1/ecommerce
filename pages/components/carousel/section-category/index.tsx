@@ -6,8 +6,10 @@ const SectionCategory = () => {
   const [count, setCount] = useState<number>(4);
   const [state, setState] = useState([]);
   const urlLocal = "http://localhost:3000/api/v1/date/category";
-  const urlProduction =
+  const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/category";
+  const urlProduction =
+    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/category";
 
   useEffect(() => {
     const fatchDate = async () => {

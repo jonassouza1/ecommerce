@@ -5,8 +5,10 @@ const SectionInfo = () => {
   const [state, setState] = useState([]);
 
   const urlLocal = "http://localhost:3000/api/v1/date/payments";
-  const urlProduction =
+  const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/payments";
+  const urlProduction =
+    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/payments";
 
   useEffect(() => {
     const fatchDate = async () => {

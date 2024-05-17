@@ -15,6 +15,4 @@ exports.up = (pgm) => {
   });
 };
 
-exports.down = (pgm) => {
-  pgm.sql("ALTER TABLE historic DROP COLUMN value;");
-};
+exports.down = (pgm) => {};
