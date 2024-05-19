@@ -9,7 +9,7 @@ const SectionCategory = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/category";
   const urlProduction =
-    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/category";
+    "https://ecommerce-mu-steel.vercel.app/api/v1/date/category";
 
   useEffect(() => {
     const fatchDate = async () => {

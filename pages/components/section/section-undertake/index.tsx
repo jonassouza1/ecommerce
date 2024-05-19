@@ -7,7 +7,7 @@ const SectionUndertake = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/images";
   const urlProduction =
-    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/images";
+    "https://ecommerce-mu-steel.vercel.app/api/v1/date/images";
 
   useEffect(() => {
     const fatchDate = async () => {
