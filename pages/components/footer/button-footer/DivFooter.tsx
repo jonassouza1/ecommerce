@@ -10,7 +10,7 @@ const DivFooter = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/informations";
   const urlProduction =
-    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/informations";
+    "https://ecommerce-mu-steel.vercel.app/api/v1/date/informations";
 
   useEffect(() => {
     const fatchDate = async () => {
