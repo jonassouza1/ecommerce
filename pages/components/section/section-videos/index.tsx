@@ -5,18 +5,12 @@ const SectionVideos = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.divText}>
-          <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/touchpoint_trailer/logo-mercado-play.png"
-              alt="image backgroud of films"
-            />
-          </div>
           <div className={styles.title}>
             <h2>Now you can watch</h2>
             <h2>series and movies</h2>
           </div>
           <div className={styles.acess}>
-            <a href="#">Access Market Play</a>
+            <a href="#">Access SLACK</a>
           </div>
         </div>
         <div className={styles.divVideo}>

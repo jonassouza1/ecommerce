@@ -1,7 +1,7 @@
 .sectionCarousel {
 
   position: relative;
-  background-color: #ffe600;
+  background-color: #01234d;
 }
 
 .carousel {
@@ -19,7 +19,7 @@
 
 .gradient {
   display: block;
-  background: linear-gradient(180deg, transparent, #ebebeb);
+  background: linear-gradient(180deg, transparent, #000914);
   bottom: 0;
   height: 30%;
   left: 0;
@@ -32,9 +32,9 @@
   height: 7px;
   width: 7px;
   border: solid 2px #fff;
-  background-color: #5a5a5a;
+  background-color: #000000;
   position: relative;
-  bottom: 215px;
+  bottom: 150px;
   z-index: 0;
   z-index: 10;
 }

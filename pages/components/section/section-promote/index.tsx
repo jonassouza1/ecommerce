@@ -7,29 +7,23 @@ const SectionPromote = () => {
         <div className={styles.divBanner}>
           <div className={styles.divText}>
             <span>CREDIT CARD</span>
-            <h2>$35 OFF NO</h2>
-            <h2>FREE MARKET</h2>
+            <h2>THE SLACK</h2>
+            <h2>YOU NEED</h2>
             <a href="#">BUY NOW</a>
           </div>
           <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/D_NQ_962224-MLA75382910279_032024-OO.jpg"
-              alt=""
-            />
+            <img src="./faxina.png" alt="" />
           </div>
         </div>
         <div className={styles.divBanner}>
           <div className={styles.divText}>
-            <span>BIG BROTHER BRAZIL</span>
-            <h2>THE FREE MARKET</h2>
-            <h2>IT HAS ARRIVED</h2>
+            <span>QUALITY TOOLS</span>
+            <h2>ALL YOU</h2>
+            <h2>NEED</h2>
             <a href="#">View more</a>
           </div>
           <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/D_NQ_629163-MLA73736847928_012024-OO.jpg"
-              alt=""
-            />
+            <img src="./tools.jpg" alt="" />
           </div>
         </div>
       </div>

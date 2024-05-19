@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 355px;
+  height: 500px;
   margin-top: 40px;
 }
 
@@ -14,7 +14,7 @@
   height: 100%;
   padding: 10px 20px;
   border-radius: 6px;
-  background-image: url('https://http2.mlstatic.com/D_NQ_829617-MLU74642844308_022024-OO.webp');
+  background-image: url('/cinema.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -34,31 +34,36 @@
   font-weight: 500;
 }
 
-.divImg {
-  display: flex;
-  width: 165px;
-  height: 66px;
-}
+
 
 .acess {
   padding-left: 15px;
+
 }
 
 .acess a {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  color: #000;
+  color: #520fcf;
+  padding: 5px;
+  transition: linear 0.4s;
+}
+
+.acess a:hover {
+  border: 0.5px solid #520fcf;
 }
 
 .divVideo {
   display: flex;
   width: 560px;
   height: 315px;
+
 }
 
 .divVideo iframe {
   border: none;
+  border-radius: 10px;
 }
 
 @media(max-width:920px) {

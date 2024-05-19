@@ -4,33 +4,40 @@
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  min-height: 100px;
+  min-height: 150px;
   padding-top: 15px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 0px;
-  background-color: #ffe600;
+  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.5));
+  background-color: #003472;
 }
 
 .divLogo {
   display: grid;
-  grid-template-columns: minmax(150px, 162px) minmax(400px, 580px) minmax(300px, 390px);
+  grid-template-columns: minmax(150px, 200px) minmax(400px, 600px) minmax(300px, 500px);
   grid-column-gap: 24px;
   grid-template-rows: auto;
+  margin-top: 20px;
+}
+
+.divLogo img {
+
+  height: 100%;
 }
 
 .divInput {
   display: flex;
   justify-content: center;
   width: 100%;
-
 }
 
 
 .divInput input {
   padding: 0px 10px;
-  width: 530px;
+  width: 500px;
   border: none;
   outline: none;
   font-size: 16px;
+  border-radius: 20%;
+  margin-right: 10px;
 }
 
 .divInput input:focus {
@@ -38,29 +45,24 @@
   border-right: none;
 }
 
-.divInput button {
-  margin-right: 5px;
-  height: 40px;
-  width: 46px;
+.divInput .btn {
+  height: 0px;
+  width: 0px;
   border: none;
   cursor: pointer;
-  background-color: #fff;
   position: relative;
+  background-color: transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #000;
+
 }
 
-.divInput button::before {
-  content: "";
+.btn i {
+  color: #fff;
   position: absolute;
-  top: -35%;
-  left: 0;
-  height: 120%;
-  width: 0.5px;
-  background: linear-gradient(to bottom, transparent 45%, #666 45%, #666 100%);
-}
-
-.divInput input:focus+button {
-  border: 0.5px solid #004daa;
-  border-left: none;
+  top: 15px;
+  left: -5px;
 }
 
 
@@ -70,6 +72,12 @@
   width: 390px;
   height: 40px;
   cursor: pointer;
+
+}
+
+.publicity img {
+  width: 80%;
+  height: 110%;
 }
 
 @media (max-width:1110px) {
@@ -78,6 +86,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 60px;
     position: relative;
   }
 
@@ -87,6 +96,20 @@
 
   .publicity {
     display: none;
+  }
+
+  .divInput .btn {
+
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid #000;
+
+  }
+
+  .btn i {
+    top: 25px;
+    left: -7px;
+    font-size: 15px;
   }
 }
 
@@ -99,9 +122,10 @@
 
   .divInput input {
     max-width: 70%;
-    height: 40px;
+
 
   }
+
 }
 
 @media (max-width:460px) {
@@ -109,4 +133,5 @@
     max-width: 60%;
     margin-left: -50px;
   }
+
 }

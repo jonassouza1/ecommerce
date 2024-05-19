@@ -1,8 +1,9 @@
 .divNav {
   display: grid;
-  grid-template-columns: minmax(150px, 162px) minmax(400px, 588px) minmax(300px, 390px);
+  grid-template-columns: minmax(150px, 162px) minmax(400px, 500px) minmax(300px, 390px);
   grid-column-gap: 24px;
   grid-template-rows: auto;
+  color: #fff;
 }
 
 .divCep {
@@ -29,12 +30,12 @@
 
 .cep span {
   font-size: 11px;
-  color: #303030;
+  color: #777777;
 }
 
 .cep p {
   font-size: 13px;
-  color: #000;
+
 }
 
 .divList {
@@ -52,7 +53,7 @@
   font-size: 13px;
   transition: 0.3s;
   text-decoration: none;
-  color: #000;
+
 }
 
 .divList .free {
@@ -63,7 +64,7 @@
   font-size: 8px;
   font-weight: 600;
   padding: 1px 3px;
-  background-color: #00a650;
+  background-color: #7801ff;
   letter-spacing: 2px;
   position: absolute;
   right: 25%;
@@ -87,7 +88,7 @@
   position: absolute;
   border-radius: 5px;
   margin-top: 10px;
-  background-color: #f7f7f7;
+  background-color: #00205a;
 }
 
 

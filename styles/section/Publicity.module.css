@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 1186px;
+  width: 1386px;
   border-radius: 6px;
 
 }
@@ -19,8 +19,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 23px;
-  height: 87px;
-  background: linear-gradient(to right, #5A238D, #AA1192);
+  height: 100px;
+  background: linear-gradient(to bottom, #110b3a, #1b062c);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -45,16 +45,6 @@
   position: relative;
 }
 
-.title .centav {
-  font-size: 16px;
-  top: 5px;
-  position: absolute;
-}
-
-.title .month {
-  font-size: 20px;
-  margin-left: 25px;
-}
 
 
 
@@ -62,9 +52,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: #030429;
   align-items: center;
   height: 175px;
+  position: relative;
 }
 
 .title2 {
@@ -99,15 +90,21 @@
 
 
 .divImg {
-  width: 72px;
-  height: 72px;
-  border-radius: 100%;
-  border: solid 1px darkgrey;
+  width: 0px;
+  height: 0px;
+
+  border: solid 1px #505050;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #000;
 }
 
 .divImg img {
-  max-width: 100%;
+  width: 70px;
   border-radius: 100%;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -35px;
 }
 
 .divPublicit .text {
@@ -124,16 +121,29 @@
   padding-right: 30px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  background-color: #fff;
+  background-color: transparent;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #030429;
+  position: relative;
 }
 
 .footer a {
   font-size: 16px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
-  padding: 14px 20px;
   border-radius: 6px;
-  background-color: #3483fa;
+  background-color: transparent;
+  position: absolute;
+  bottom: -90px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #14142b;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  border-bottom: 60px solid #3483fa;
 }
 
 @media(max-width:1200px) {
@@ -178,8 +188,26 @@
 }
 
 @media(max-width:360px) {
+
+  .section {
+    height: 500px;
+    margin-bottom: 150px;
+  }
+
   .divPublicit {
     justify-content: space-between;
     width: 90%;
+  }
+
+  .divImg {
+    border: solid 1px #505050;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid #000;
+  }
+
+  .divImg img {
+    width: 50px;
+
   }
 }

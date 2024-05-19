@@ -4,22 +4,16 @@ const SectionBanner = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.divBanner}>
-          <img
-            src="https://http2.mlstatic.com/D_NQ_684629-MLA74306154898_022024-OO.jpg"
-            alt="beer image"
-          />
+          <img src="./leptop.jpg" alt="leptop image" />
         </div>
         <div className={styles.divText}>
           <div className={styles.divImg}>
-            <img
-              src="https://http2.mlstatic.com/D_NQ_986957-MLA74306125284_022024-OO.jpg"
-              alt="beer logo image"
-            />
+            <img src="./logomarca.jpg" alt="system logo image" />
           </div>
           <div className={styles.divTitle}>
             <div className={styles.divP}>
-              <p>HEINEKEN FLAVOR</p>
-              <p>ONLY HEINEKEN</p>
+              <p>GAMER COMPUTER</p>
+              <p>INTEGRATED SYSTEM</p>
             </div>
 
             <div className={styles.divArrow}>

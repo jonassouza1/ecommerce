@@ -82,7 +82,7 @@ input:checked~label .hamburger::after {
   padding: 10px 10px;
   transition: 0.3s;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .divList2 i {

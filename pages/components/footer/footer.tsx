@@ -9,7 +9,7 @@ const Footer = () => {
             <nav className={styles.nav}>
               <ul>
                 <li>
-                  <a href="#">Work with us</a>
+                  <a href="#">Work with Br</a>
                 </li>
                 <li>
                   <a href="#">Terms and conditions</a>
@@ -28,12 +28,11 @@ const Footer = () => {
                 </li>
               </ul>
             </nav>
-            <small>Copyright © 1999-2024 Ebazar.com.br LTDA.</small>
+            <small>Copyright © 2023-2024 Slack.com.br LTDA.</small>
           </div>
           <p>
-            CNPJ no. 03.007.331/0001-41 / Av. das Nações Unidas, no. 3.003,
-            Bonfim, Osasco/SP - CEP 06233-903 - company of the Mercado Livre
-            group.
+            CNPJ at the. 00.000.000/0000-00 / Av. of municipalities, at the.
+            0.000 , Campo Bom/RS - CEP 937-000-00 - company of the Slack group.
           </p>
         </div>
       </div>

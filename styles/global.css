@@ -8,10 +8,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
+  color: #fff
 }
 
 body {
-  background-color: #ebebeb;
+  background-color: #032042;
 
 }
 
