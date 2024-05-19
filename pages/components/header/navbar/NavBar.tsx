@@ -23,7 +23,7 @@ const NavBar = () => {
               Vehicles
             </a>
             <a href="#" target="_blank">
-              Supermarket
+              Slack
             </a>
             <a href="#" target="_blank">
               Tecnology
@@ -35,23 +35,13 @@ const NavBar = () => {
         </li>
         <li>
           <a href="#" target="_blank">
-            Offer of the day
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
             Historic
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            Supermarket
           </a>
         </li>
         <li className={styles.free}>
           <a href="#" target="_blank">
             <p>Free</p>
-            Play Market
+            games
           </a>
         </li>
         <li>

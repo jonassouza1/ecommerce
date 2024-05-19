@@ -11,15 +11,12 @@ const SectionProducts = () => {
             <h3>Offer of the day</h3>
 
             <a href="#">
-              <img
-                src="https://http2.mlstatic.com/D_Q_NP_2X_736700-MLU74110477966_012024-V.webp"
-                alt="cream"
-              />
+              <img src="./audiofone.jpg" alt="cream" />
             </a>
 
-            <p>Bepantol Baby Diaper Rash Preventive Cream 120g</p>
+            <p>High quality sound gaming microphone</p>
             <span>
-              <del>$9,62</del>
+              <del>$10,70</del>
             </span>
             <h2>
               $8<span className={styles.centav}>03</span>

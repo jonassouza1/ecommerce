@@ -5,10 +5,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.divLogo}>
-        <img
-          src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.15/mercadolibre/pt_logo_large_plus.webp"
-          alt="logo free market"
-        />
+        <img src="./logo.jpg" alt="logo free market" />
         <div className={styles.divInput}>
           <input
             type="text"
@@ -19,10 +16,7 @@ const Header = () => {
           </button>
         </div>
         <div className={styles.publicity}>
-          <img
-            src="https://http2.mlstatic.com/D_NQ_802965-MLA75056376619_032024-OO.webp"
-            alt=""
-          />
+          <img src="./publicity.jpg" alt="" />
         </div>
       </div>
 

@@ -9,28 +9,14 @@ const SectionBenefits = () => {
           <div className={styles.banner1}>
             <div className={styles.divLogo}>
               <div className={styles.divImg}>
-                <img
-                  src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/disneyplus/comboplus-square.jpg"
-                  alt="banner Disney"
-                />
-              </div>
-              <div className={styles.divSpan}>
-                <span>No cost with Meli+</span>
-                <span className={styles.span2}>Disney+ and Star+</span>
+                <img src="./man.jpg" alt="banner Disney" />
               </div>
             </div>
           </div>
           <div className={styles.banner2}>
             <div className={styles.divLogo}>
               <div className={styles.divImg}>
-                <img
-                  src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/max/logo/max-square@2x.png"
-                  alt="banner Max"
-                />
-              </div>
-              <div className={styles.divSpan}>
-                <span>UP TO 30% OFF</span>
-                <span className={styles.span2}>Max</span>
+                <img src="./man1.png" alt="banner Max" />
               </div>
             </div>
           </div>

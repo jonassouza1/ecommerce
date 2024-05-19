@@ -28,7 +28,7 @@
   display: flex;
   width: 120px;
   height: 84px;
-  background-color: #000;
+  background-color: #0e0e14;
   padding: 8px 14px;
   border-radius: 6px;
 }
@@ -45,7 +45,7 @@
   height: 100%;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  background-color: #00a650;
+  background-color: #1f1e2e;
 }
 
 

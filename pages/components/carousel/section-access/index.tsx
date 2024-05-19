@@ -11,7 +11,7 @@ const SectionAccess = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/datesacess";
   const urlProduction =
-    "https://ecommerce-tau-ruby.vercel.app/api/v1/date/datesacess";
+    "https://ecommerce-mu-steel.vercel.app/api/v1/date/datesacess";
 
   useEffect(() => {
     const fatchDate = async () => {
@@ -26,12 +26,12 @@ const SectionAccess = () => {
 
   useEffect(() => {
     const handleResize = async () => {
-      if (window.innerWidth < 1200) {
+      if (window.innerWidth < 1400) {
         setCount(4);
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 900) {
           setCount(3);
         }
-        if (window.innerWidth < 630) {
+        if (window.innerWidth < 700) {
           setCount(2);
         }
         if (window.innerWidth < 530) {
