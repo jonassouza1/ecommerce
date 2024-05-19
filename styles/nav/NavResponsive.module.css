@@ -106,7 +106,7 @@ input:checked~label .hamburger::after {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #f7f7f7;
+    background-color: #091624;
   }
 
   .divList2 li {
@@ -116,7 +116,7 @@ input:checked~label .hamburger::after {
   }
 
   .divList2 li a:hover {
-    background-color: #3391ff;
+    background-color: #475666;
   }
 
   .container {
