@@ -15,7 +15,7 @@ const Carousel = () => {
         <Swiper slidesPerView={1} pagination={{ clickable: true }} navigation>
           {images.map((el) => (
             <SwiperSlide key={el.id}>
-              <img src={el.image} alt="sss" />
+              <img src={el.image} alt="images marketing" />
             </SwiperSlide>
           ))}
         </Swiper>

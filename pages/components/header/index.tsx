@@ -16,7 +16,7 @@ const Header = () => {
           </button>
         </div>
         <div className={styles.publicity}>
-          <img src="./publicity.jpg" alt="" />
+          <img src="./publicity.jpg" alt="image marketing" />
         </div>
       </div>
 

@@ -3,28 +3,28 @@ import styles from "styles/footer/Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
+      <div id="Footer" className={styles.container}>
         <div className={styles.divFooter}>
           <div className={styles.containerNav}>
             <nav className={styles.nav}>
               <ul>
                 <li>
-                  <a href="#">Work with Br</a>
+                  <a href="##">Work with Br</a>
                 </li>
                 <li>
-                  <a href="#">Terms and conditions</a>
+                  <a href="##">Terms and conditions</a>
                 </li>
                 <li>
-                  <a href="#">How we take care of your privacy</a>
+                  <a href="##">How we take care of your privacy</a>
                 </li>
                 <li>
-                  <a href="#">Accessibility</a>
+                  <a href="##">Accessibility</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="##">Contact</a>
                 </li>
                 <li>
-                  <a href="#">Insurance information</a>
+                  <a href="##">Insurance information</a>
                 </li>
               </ul>
             </nav>

@@ -34,7 +34,7 @@ const SectionInfo = () => {
               <p>
                 <span>{el.text}</span>
               </p>
-              <a href="#">{el.button}</a>
+              <a href="##">{el.button}</a>
             </div>
           );
         })}

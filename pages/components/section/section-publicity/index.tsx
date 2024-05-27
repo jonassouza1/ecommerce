@@ -40,7 +40,7 @@ const Publicity = () => {
               return (
                 <div className={styles.divPublicit} key={i}>
                   <div className={styles.divImg}>
-                    <img src={el.image} alt="" />
+                    <img src={el.image} alt="icons publicity" />
                   </div>
                   <div className={styles.text}>
                     <span>{el.text}</span>
@@ -52,7 +52,7 @@ const Publicity = () => {
         </div>
         <div className={styles.footer}>
           {" "}
-          <a href="#">Subscribe SLACK</a>
+          <a href="##">Subscribe SLACK</a>
         </div>
       </div>
     </section>

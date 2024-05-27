@@ -61,7 +61,7 @@ const SectionAccess = () => {
                   <img src={slide.image} alt="Imagem" />
                 </div>
                 <span>{slide.text}</span>
-                <a href="#">{slide.button}</a>
+                <a href="##">{slide.button}</a>
               </div>
             </SwiperSlide>
           ))}

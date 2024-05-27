@@ -4,7 +4,7 @@ import NavResponsive from "./nav-responsive";
 const NavBar = () => {
   return (
     <nav className={styles.divNav}>
-      <a href="#" className={styles.divCep}>
+      <a href="##" className={styles.divCep}>
         <i className="fa-solid fa-location-dot"></i>
         <div className={styles.cep}>
           <span>Enter your</span>
@@ -14,50 +14,34 @@ const NavBar = () => {
 
       <ul className={styles.divList}>
         <li className={styles.father}>
-          <a href="#" target="_blank" className={styles.children}>
-            Categories <i className="fa-solid fa-chevron-down"></i>
+          <a href="##" className={styles.children}>
+            Sections <i className="fa-solid fa-chevron-down"></i>
           </a>
           <div className={styles.dropdown}>
             <i></i>
-            <a href="#" target="_blank">
-              Vehicles
-            </a>
-            <a href="#" target="_blank">
-              Slack
-            </a>
-            <a href="#" target="_blank">
-              Tecnology
-            </a>
-            <a href="#" target="_blank">
-              Home appliances
-            </a>
+            <a href="#SectionUndertake">Vehicles</a>
+            <a href="#SectionCategory">Categories</a>
+            <a href="#SectionBanner">Tecnology</a>
+            <a href="#SectionBenefits">Movie theater</a>
           </div>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Historic
-          </a>
+          <a href="#CarouselHistoric">Historic</a>
         </li>
         <li className={styles.free}>
-          <a href="#" target="_blank">
+          <a href="#SectionUndertake">
             <p>Free</p>
             games
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Fashion
-          </a>
+          <a href="##">Fashion</a>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Sell
-          </a>
+          <a href="##">Sell</a>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Contat
-          </a>
+          <a href="#Footer">Contat</a>
         </li>
       </ul>
       <NavResponsive />

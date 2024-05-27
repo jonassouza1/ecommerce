@@ -2,7 +2,7 @@ import styles from "styles/section/SectionBenefits.module.css";
 
 const SectionBenefits = () => {
   return (
-    <section className={styles.section}>
+    <section id="SectionBenefits" className={styles.section}>
       <div className={styles.container}>
         <h1>Content benefits</h1>
         <div className={styles.divBanners}>
