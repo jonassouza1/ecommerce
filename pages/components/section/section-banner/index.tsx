@@ -2,7 +2,7 @@ import styles from "styles/section/SectionBanner.module.css";
 const SectionBanner = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
+      <div id="SectionBanner" className={styles.container}>
         <div className={styles.divBanner}>
           <img src="./leptop.jpg" alt="leptop image" />
         </div>

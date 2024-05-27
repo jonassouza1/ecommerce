@@ -9,7 +9,7 @@ const SectionPromote = () => {
             <span>CREDIT CARD</span>
             <h2>THE SLACK</h2>
             <h2>YOU NEED</h2>
-            <a href="#">BUY NOW</a>
+            <a href="##">BUY NOW</a>
           </div>
           <div className={styles.divImg}>
             <img src="./faxina.png" alt="" />
@@ -20,7 +20,7 @@ const SectionPromote = () => {
             <span>QUALITY TOOLS</span>
             <h2>ALL YOU</h2>
             <h2>NEED</h2>
-            <a href="#">View more</a>
+            <a href="##">View more</a>
           </div>
           <div className={styles.divImg}>
             <img src="./tools.jpg" alt="" />

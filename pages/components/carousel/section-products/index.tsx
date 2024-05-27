@@ -10,7 +10,7 @@ const SectionProducts = () => {
           <div className={styles.offerDay}>
             <h3>Offer of the day</h3>
 
-            <a href="#">
+            <a href="##">
               <img src="./audiofone.jpg" alt="cream" />
             </a>
 

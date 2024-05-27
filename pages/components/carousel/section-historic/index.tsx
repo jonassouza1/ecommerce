@@ -56,7 +56,7 @@ const CarouselHistoric = () => {
     <div>
       <div className={styles.fill}></div>
       <section className={styles.sectionCarousel}>
-        <div className={styles.container}>
+        <div id="CarouselHistoric" className={styles.container}>
           <div className={styles.divTitle}>
             <h1>Offer of the day</h1>
           </div>
@@ -70,7 +70,7 @@ const CarouselHistoric = () => {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className={stylesP.offerDay}>
-                    <a className={stylesP.divImg} href="#">
+                    <a className={stylesP.divImg} href="##">
                       <img src={slide.image} alt="cream" />
                     </a>
                     <p>{slide.text}</p>

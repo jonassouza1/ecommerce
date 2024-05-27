@@ -18,16 +18,10 @@ const NavResponsive = () => {
 
       <ul className={styles.divList2}>
         <li>
-          <a href="#" target="_blank">
-            Create your account
-          </a>
-          <a href="#" target="_blank">
-            Enter
-          </a>
-          <a href="#" target="_blank">
-            Purchase
-          </a>
-          <a href="#" target="_blank">
+          <a href="##">Create your account</a>
+          <a href="##">Enter</a>
+          <a href="##">Purchase</a>
+          <a href="##">
             <i className="fa-solid fa-cart-shopping"></i>
           </a>
         </li>

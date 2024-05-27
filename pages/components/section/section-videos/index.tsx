@@ -10,7 +10,7 @@ const SectionVideos = () => {
             <h2>series and movies</h2>
           </div>
           <div className={styles.acess}>
-            <a href="#">Access SLACK</a>
+            <a href="##">Access SLACK</a>
           </div>
         </div>
         <div className={styles.divVideo}>

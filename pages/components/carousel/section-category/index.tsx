@@ -45,11 +45,11 @@ const SectionCategory = () => {
   }, []);
 
   return (
-    <section className={styles.section}>
+    <section id="SectionCategory" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.divTitle}>
           <h2>Categories</h2>
-          <a href="#">Show all categories</a>
+          <a href="##">Show all categories</a>
         </div>
         <div>
           <Swiper
@@ -66,7 +66,7 @@ const SectionCategory = () => {
                       <img src={el.image} alt="imagem" />
                     </div>
                     <div className={styles.divName}>
-                      <a href="#">{el.title}</a>
+                      <a href="##">{el.title}</a>
                     </div>
                   </div>
                   <div className={styles.category}>
@@ -74,7 +74,7 @@ const SectionCategory = () => {
                       <img src={el.image1} alt="imagem" />
                     </div>
                     <div className={styles.divName}>
-                      <a href="#">{el.title1}</a>
+                      <a href="##">{el.title1}</a>
                     </div>
                   </div>
                   <div className={styles.category}>
@@ -82,7 +82,7 @@ const SectionCategory = () => {
                       <img src={el.image2} alt="imagem" />
                     </div>
                     <div className={styles.divName}>
-                      <a href="#">{el.title2}</a>
+                      <a href="##">{el.title2}</a>
                     </div>
                   </div>
                 </div>

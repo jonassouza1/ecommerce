@@ -61,7 +61,7 @@ const CarouselProducts = () => {
             <SwiperSlide key={index}>
               <div className={styles.containerSlides}>
                 <div className={styles.offerDay}>
-                  <a href="#">
+                  <a href="##">
                     <img src={slide.image} alt={slide.alt} />
                   </a>
                   <p>{slide.text}</p>

@@ -32,22 +32,22 @@ const DivFooter = () => {
               <h3>{el.title}</h3>
               <ul>
                 <li>
-                  <a href="#">{el.text}</a>
+                  <a href="##">{el.text}</a>
                 </li>
                 <li>
-                  <a href="#">{el.text1}</a>
+                  <a href="##">{el.text1}</a>
                 </li>
                 <li>
-                  <a href="#">{el.text2}</a>
+                  <a href="##">{el.text2}</a>
                 </li>
                 <li>
-                  <a href="#">{el.text3}</a>
+                  <a href="##">{el.text3}</a>
                 </li>
                 <li>
-                  <a href="#">{el.text4}</a>
+                  <a href="##">{el.text4}</a>
                 </li>
                 <li>
-                  <a href="#">{el.text5}</a>
+                  <a href="##">{el.text5}</a>
                 </li>
               </ul>
             </div>

@@ -22,7 +22,7 @@ const SectionUndertake = () => {
   }, []);
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
+      <div id="SectionUndertake" className={styles.container}>
         {state.map((el, i) => {
           return (
             <div key={i} className={styles.divContainer}>
@@ -34,22 +34,22 @@ const SectionUndertake = () => {
               </div>
               <ul className={styles.list}>
                 <li>
-                  <a href="#">
+                  <a href="##">
                     <img src={el.img} alt={el.alt} />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="##">
                     <img src={el.img1} alt={el.alt1} />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="##">
                     <img src={el.img2} alt={el.alt2} />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="##">
                     <img src={el.img3} alt={el.alt3} />
                   </a>
                 </li>
