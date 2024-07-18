@@ -8,7 +8,7 @@ const SectionInfo = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/payments";
   const urlProduction =
-    "https://ecommerce-mu-steel.vercel.app/api/v1/date/payments";
+    "https://ecommerce-ivory-ten.vercel.app/api/v1/date/payments";
 
   useEffect(() => {
     const fatchDate = async () => {

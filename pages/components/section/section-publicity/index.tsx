@@ -9,7 +9,7 @@ const Publicity = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/publicitys";
   const urlProduction =
-    "https://ecommerce-mu-steel.vercel.app/api/v1/date/publicitys";
+    "https://ecommerce-ivory-ten.vercel.app/api/v1/date/publicitys";
 
   useEffect(() => {
     const fatchDate = async () => {
