@@ -18,7 +18,7 @@ const SectionPromote = () => {
         <div className={styles.divBanner}>
           <div className={styles.divText}>
             <span>QUALITY TOOLS</span>
-            <h2>ALL YOU</h2>
+            <h2>ALL You</h2>
             <h2>NEED</h2>
             <a href="##">View more</a>
           </div>
