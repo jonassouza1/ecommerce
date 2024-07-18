@@ -9,9 +9,9 @@ const SectionAccess = () => {
 
   const urlLocal = "http://localhost:3000/api/v1/date/datesacess";
   const urlPreviw =
-    "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/datesacess";
+    "https://ecommerce-ivory-ten.vercel.app//api/v1/date/datesacess";
   const urlProduction =
-    "https://ecommerce-mu-steel.vercel.app/api/v1/date/datesacess";
+    "https://ecommerce-ivory-ten.vercel.app//api/v1/date/datesacess";
 
   useEffect(() => {
     const fatchDate = async () => {
