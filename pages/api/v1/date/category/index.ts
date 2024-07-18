@@ -1,11 +1,15 @@
 import database from "@/infra/database";
 
-async function datesCategory(request, response) {
+import cors from "@/lib/cors";
+
+async function datesCategory(req, res) {
+  await cors(req, res);
+
   const dates = await database.query(`SELECT * FROM category`);
 
   const result = await dates.rows;
 
-  response.status(200).json({
+  res.status(200).json({
     result,
   });
 }
