@@ -4,7 +4,6 @@ import Head from "next/head";
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
       <Head>
         <script
           async
@@ -12,6 +11,7 @@ export default function MyApp({ Component, pageProps }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
+      <Component {...pageProps} />
     </>
   );
 }
