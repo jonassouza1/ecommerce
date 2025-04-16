@@ -11,7 +11,7 @@ const CarouselProducts = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/products";
   const urlProduction =
-    "https://ecommerce-ivory-ten.vercel.app/api/v1/date/products";
+    "https://ecommerce-70b6.onrender.com/api/v1/date/products";
   useEffect(() => {
     const fatchDate = async () => {
       const url =

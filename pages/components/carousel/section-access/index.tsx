@@ -11,7 +11,7 @@ const SectionAccess = () => {
   const urlPreviw =
     "https://ecommerce-ivory-ten.vercel.app//api/v1/date/datesacess";
   const urlProduction =
-    "https://ecommerce-ivory-ten.vercel.app//api/v1/date/datesacess";
+    "https://ecommerce-70b6.onrender.com/api/v1/date/datesacess";
 
   useEffect(() => {
     const fatchDate = async () => {

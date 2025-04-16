@@ -12,7 +12,7 @@ const CarouselHistoric = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/historic";
   const urlProduction =
-    "https://ecommerce-ivory-ten.vercel.app/api/v1/date/historic";
+    "https://ecommerce-70b6.onrender.com/api/v1/date/historic";
   useEffect(() => {
     const fatchDate = async () => {
       const url =

@@ -9,7 +9,7 @@ const SectionCategory = () => {
   const urlPreviw =
     "https://ecommerce-ivory-ten.vercel.app/api/v1/date/category";
   const urlProduction =
-    "https://ecommerce-ivory-ten.vercel.app/api/v1/date/category";
+    "https://ecommerce-70b6.onrender.com/api/v1/date/category";
 
   useEffect(() => {
     const fatchDate = async () => {

@@ -7,7 +7,7 @@ const SectionUndertake = () => {
   const urlPreviw =
     "https://ecommerce-git-fix-migrations-jonassouza1s-projects.vercel.app/api/v1/date/images";
   const urlProduction =
-    "https://ecommerce-ivory-ten.vercel.app/api/v1/date/images";
+    "https://ecommerce-70b6.onrender.com/api/v1/date/images";
 
   useEffect(() => {
     const fatchDate = async () => {
